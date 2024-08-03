@@ -1,0 +1,366 @@
+/* Original CSS */
+nav ul li a {
+    --blue: #1E90FF;
+    /* Blue shade */
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--blue);
+    background: linear-gradient(to right, rgba(30, 144, 255, 0.1) 1%, transparent 40%, transparent 60%, rgba(30, 144, 255, 0.1) 100%);
+    color: var(--blue);
+    box-shadow: inset 0 0 10px rgba(30, 144, 255, 0.4), 0 0 9px 3px rgba(30, 144, 255, 0.1);
+}
+
+nav ul li a:hover {
+    color: #0C4C9E;
+    /* Darker blue shade for hover state */
+    box-shadow: inset 0 0 10px rgba(30, 144, 255, 0.6), 0 0 9px 3px rgba(30, 144, 255, 0.2);
+}
+
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    left: -1em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform 0.4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(30, 144, 255, 0.1) 40%, rgba(30, 144, 255, 0.1) 60%, transparent 100%);
+}
+
+nav ul li a:hover:before {
+    transform: translateX(5em);
+}
+
+/* Media Query for screens with max-width of 1600px */
+@media screen and (max-width: 1600px) {
+    nav ul li a {
+        font-size: 11px;
+        /* Adjust font size */
+        padding: 0.5em 1.5em;
+        /* Adjust padding */
+    }
+
+    nav ul li a:before {
+        width: 3em;
+        /* Adjust width of the before element */
+        left: -0.8em;
+        /* Adjust the left position */
+    }
+
+    nav ul li a:hover:before {
+        transform: translateX(4em);
+        /* Adjust the translation */
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 24, 33);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(5, 47, 62);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* nav ul li a:hover {
+    color: rgb(53, 191, 25);
+    font-size: 1.05rem;
+} */
+
+.left {
+    font-size: 2rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px 0;
+    flex-wrap: wrap;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    width: 34px;
+    font-size: 2.5rem;
+    margin-top: 70px;
+    align-items: center;
+}
+
+main section div .button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+main section div button {
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+main section div button:active,
+button:hover {
+    outline: 0;
+}
+
+main section div button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+main section div button:hover span {
+    background: none;
+}
+
+main section div button:active {
+    transform: scale(0.9);
+}
+
+.rightsection {
+    width: 34px;
+}
+
+.rightsection img {
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.black {
+    color: rgb(38, 254, 0);
+}
+
+#element {
+    color: rgb(81, 224, 138);
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.secondsection h1 {
+    font-size: 1.9rem;
+    color: aqua;
+}
+
+.secondsection .box {
+    background: aqua;
+    width: 80vw;
+    height: 2px;
+    margin: 86px 0;
+    display: flex;
+}
+
+.secondsection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: aqua;
+    margin: 0 100px;
+}
+
+
+.text {
+    color: gray;
+}
+
+.img-top {
+    width: 55px;
+    position: relative;
+    top: -56px;
+    left: -10px;
+}
+
+.vert-text {
+    position: relative;
+    top: 60px;
+    width: 170px;
+    font-size: 16px;
+
+}
+
+.vert-desc {
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 170px;
+    font-size: 14px;
+}
+
+main hr {
+    border: 0;
+    background: rgb(64, 253, 64);
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+footer {
+    background-color: rgb(6, 73, 73);
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 223px;
+}
+
+footer .footer-right {
+    text-align: center;
+    color: gray;
+    padding: 12px 0px;
+}
+
+@media screen and (max-width: 1600px) {
+    body {
+        min-width: fit-content;
+    }
+
+    .firstsection {
+        margin: 20px 0;
+
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .secondsection .box {
+        background: aqua;
+        width: 80vw;
+        height: 2px;
+        margin: 16px 0;
+        display: flex;
+    }
+
+    .secondsection .vertical {
+        height: unset;
+        width: 1px;
+        background-color: aqua;
+        margin: 0 6vw;
+    }
+
+    .img-top {
+        width: 55px;
+        position: relative;
+        top: 110px;
+        left: -25px;
+    }
+
+    .vert-text,
+    .vert-desc {
+        left: 45px;
+    }
+
+    .secondsection .box {
+        width: 50vw;
+    }
+
+    .secondsection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondsection {
+        height: 400vh;
+    }
+
+    main section div button span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstsection {
+        flex-direction: column-reverse;
+    }
+
+    .leftsection,
+    .i {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightsection {
+        width: 420px !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+
+}

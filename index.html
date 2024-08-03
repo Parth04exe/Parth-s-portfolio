@@ -12,125 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(0, 24, 33);
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100px;
-            background-color: rgb(5, 47, 62);
-        }
-
-        nav ul {
-            display: flex; 
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgb(53, 191, 25);
-            font-size: 1.05rem;
-        }
-
-        .left {
-            font-size: 2rem;
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 130px 0;
-        }
-
-        .firstsection>div {
-            width: 30%;
-        }
-
-        .leftsection {
-            /* background-color: red; */
-            width: 34px;
-            font-size: 2.5rem;
-            margin-top: 70px;
-            align-items: center;
-        }
-
-        .rightsection {
-            /* background-color: red; */
-            width: 34px;
-        }
-
-        .rightsection img {
-            width: 80%;
-
-            /* margin-top: auto;
-            margin-right: auto;
-            margin-bottom: 150px; */
-            margin-left: 200px;
-        }
-
-        .black {
-            color: rgb(38, 254, 0);
-        }
-
-        #element {
-            color: rgb(81, 224, 138);
-        }
-
-        .secondsection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-
-        .secondsection h1 {
-            font-size: 1.9rem;
-            color: aqua;
-        }
-
-        .secondsection .box {
-            background: aqua;
-            width: 80vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-        .secondsection .vertical{
-            height: 93px;
-            width: 1px;
-            background-color: aqua;
-        }
-        .text {
-            color: gray;
-        }
-
-        main hr {
-            border: 0;
-            background: rgb(64, 253, 64);
-            height: 1.2px;
-            margin: 40px 84px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -149,11 +31,17 @@
     </header>
     <main>
         <section class="firstsection">
-            <div class="leftsection">Hi, My name is
-                <span class="black">Parth</span>
-                <div>and i am a passionate</div>
-                <div>web developer</div>
-                <span id="element"></span>
+            <div class="leftsection">
+                <div>Hi, My name is
+                    <span class="black">Parth </span><br>nice to meet you!
+                
+                <div>and I am a passionate<br>
+                    <span id="element"></span>
+                </div></div>
+                <div class="button">
+                    <button><span class="btn">Download resume</span></button>
+                    <button><span class="btn">Visit Github</span></button>
+                </div>
             </div>
             <div class="rightsection">
                 <img src="Image.png" alt="">
@@ -164,18 +52,101 @@
             <span class="text">Here's what I've worked on so far. </span>
             <h1>Work experience</h1>
             <div class="box">
-            <div class="vertical"></div>
-            <div class="vertical"></div>
-            <div class="vertical"></div>
-            <div class="vertical"></div></div>
+                <div class="vertical">
+                    <img class="img-top" src="calculator.png" alt="">
+                    <div class="vert-text">Basic Calculator Web (Mar 2024-Mar 2024)</div>
+                    <div class="vert-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quos aut
+                        perspiciatis temporibus blanditiis quas, tenetur repellendus excepturi quibusdam vitae. Dolore,
+                        voluptatum animi?</div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="netflix.png" alt="">
+                    <div class="vert-text">Netflix Website Clone (April 2024-April 2024)</div>
+                    <div class="vert-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quos aut
+                        perspiciatis temporibus blanditiis quas, tenetur repellendus excepturi quibusdam vitae. Dolore,
+                        voluptatum animi?</div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="nike.png" alt="">
+                    <div class="vert-text">Nike Website Clone (April 2024-June 2024)</div>
+                    <div class="vert-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quos aut
+                        perspiciatis temporibus blanditiis quas, tenetur repellendus excepturi quibusdam vitae. Dolore,
+                        voluptatum animi?</div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="foodie.png" alt="">
+                    <div class="vert-text">Foodie Mart (Jun 2024-Present)</div>
+                    <div class="vert-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quos aut
+                        perspiciatis temporibus blanditiis quas, tenetur repellendus excepturi quibusdam vitae. Dolore,
+                        voluptatum animi?</div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="Image2.png" alt="">
+                    <div class="vert-text">My-Portfolio (July 2024-Present)</div>
+                    <div class="vert-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quos aut
+                        perspiciatis temporibus blanditiis quas, tenetur repellendus excepturi quibusdam vitae. Dolore,
+                        voluptatum animi?</div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="canva.png" alt="">
+                    <div class="vert-text">Canva Creator (July 2024-Present)</div>
+                    <div class="vert-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quos aut
+                        perspiciatis temporibus blanditiis quas, tenetur repellendus excepturi quibusdam vitae. Dolore,
+                        voluptatum animi?</div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="figma.png" alt="">
+                    <div class="vert-text">Figma Solo Designer (July 2024-Present)</div>
+                    <div class="vert-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quos aut
+                        perspiciatis temporibus blanditiis quas, tenetur repellendus excepturi quibusdam vitae. Dolore,
+                        voluptatum animi?</div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Parth's Developer Portfolio</h3>
+            </div>
+            <!-- <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+        </div> -->
+        <div class="footer-right">Copyright &copy; parthsportfolio.com | All rights reserved
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script>
         var typed = new Typed('#element', {
             strings: ['WEB DEVELOPER', 'WEB DESIGNER', 'GRAPHIC DESIGNER', 'VIDEO EDITOR'],
-            typeSpeed: 50,
+            typeSpeed: 90,
         });
     </script>
 </body>
