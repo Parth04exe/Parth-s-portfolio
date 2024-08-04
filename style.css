@@ -1,4 +1,41 @@
-/* Original CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 24, 33);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(5, 47, 62);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* nav ul li a:hover {
+    font-size: .05rem;
+} */
+
 nav ul li a {
     --blue: #1E90FF;
     /* Blue shade */
@@ -38,6 +75,10 @@ nav ul li a:hover:before {
     transform: translateX(5em);
 }
 
+.left {
+    font-size: 2rem;
+}
+
 /* Media Query for screens with max-width of 1600px */
 @media screen and (max-width: 1600px) {
     nav ul li a {
@@ -58,51 +99,10 @@ nav ul li a:hover:before {
         transform: translateX(4em);
         /* Adjust the translation */
     }
+
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: rgb(0, 24, 33);
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    background-color: rgb(5, 47, 62);
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    list-style: none;
-    margin: 0 23px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-/* nav ul li a:hover {
-    color: rgb(53, 191, 25);
-    font-size: 1.05rem;
-} */
-
-.left {
-    font-size: 2rem;
-}
-
+/* ------------GREETINGS AND MAIN IMAGE-------- */
 .firstsection {
     display: flex;
     justify-content: space-around;
@@ -115,6 +115,7 @@ nav ul li a {
     width: 30%;
 }
 
+/* ---------GREETINGS-------- */
 .leftsection {
     width: 34px;
     font-size: 2.5rem;
@@ -122,6 +123,28 @@ nav ul li a {
     align-items: center;
 }
 
+.black {
+    color: rgb(38, 254, 0);
+}
+
+/* ----------MAIN IMAGE--------- */
+.rightsection {
+    width: 34px;
+}
+
+.rightsection img {
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+
+
+#element {
+    color: rgb(81, 224, 138);
+}
+
+/* ----------BUTTON-------- */
 main section div .button {
     display: flex;
     gap: 10px;
@@ -175,24 +198,202 @@ main section div button:active {
     transform: scale(0.9);
 }
 
-.rightsection {
-    width: 34px;
+/* -------------ABOUT---------- */
+.sect {
+    padding: 40px 0;
 }
 
-.rightsection img {
-    width: 80%;
-    margin-left: 20px;
-    margin-top: 70px;
+.about {
+    color: #ababab;
 }
 
-.black {
-    color: rgb(38, 254, 0);
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-#element {
-    color: rgb(81, 224, 138);
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* Align items to the top */
+    justify-content: space-between;
 }
 
+.about-col-1,
+.about-col-2 {
+    flex: 1;
+    margin: 20px;
+    max-width: 45%;
+}
+
+.about-col-1 img {
+    width: 400px;
+    height: 550px;
+    border-radius: 15px;
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: aquamarine;
+}
+
+.about p {
+    line-height: 1.6;
+    color: #ababab;
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: flex-start;
+    /* Align tabs to the start */
+    margin-top: 20px;
+}
+
+.tab-links {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #ababab;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.active-link {
+    border-color: #0ef152;
+}
+
+/* Styles for tab contents */
+.tab-contents {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.tab-contents ul {
+    padding: 0;
+    margin: 0;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #0ef152;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+
+    .about-col-1,
+    .about-col-2 {
+        flex: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .about-col-1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-col-1 img {
+        width: 200px;
+        height: 270px;
+    }
+}
+
+/* -------------MY SERVICES-------------- */
+.sub-title {
+    font-size: 4rem;
+    text-align: center;
+    color: #0ef152;
+}
+
+#services {
+    padding: 30px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: #032236;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #0ef152;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: #033436;
+    transform: translateY(-10px);
+}
+
+/* Media Query for max-width 1400px */
+@media screen and (max-width: 1400px) {
+    .sub-title {
+        font-size: 3.5rem;
+    }
+
+    .services-list {
+        grid-gap: 30px;
+    }
+
+    .services-list div {
+        padding: 30px;
+        font-size: 12px;
+    }
+
+    .services-list div i {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+
+    .services-list div h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .services-list div a {
+        font-size: 13px;
+    }
+}
+
+/* ----------WORK EXPERIENCE----------- */
 .secondsection {
     max-width: 80vw;
     margin: auto;
@@ -247,6 +448,7 @@ main section div button:active {
     font-size: 14px;
 }
 
+/* ------------GREENLINE------------ */
 main hr {
     border: 0;
     background: rgb(64, 253, 64);
@@ -254,6 +456,155 @@ main hr {
     margin: 40px 84px;
 }
 
+/* <--------CONTACT ME--------- */
+.contat-left {
+    flex-basis: 35%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+
+}
+
+.contact-left p i {
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: gray;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    margin-left: 15px;
+    transition: transform 0.5s;
+    margin-top: 70px;
+}
+
+.social-icons a:hover {
+    color: #0ef152;
+    transform: translateY(-5px);
+}
+
+section div div div div form button {
+    display: inline-block;
+    background: #0ef152;
+    color: #032236;
+    padding: 10px;
+    padding: 14px 60px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    background: #262626;
+    font-size: 18px;
+    color: #0ef152;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        /* Making both contact sections take full width */
+        text-align: center;
+        /* Centering text within these sections */
+    }
+
+    .contact-left p {
+        margin-top: 20px;
+        /* Adjusting top margin */
+    }
+
+    .contact-left p i {
+        font-size: 20px;
+        /* Adjusting icon size */
+        margin-left: 10px;
+        /* Adjusting left margin */
+    }
+
+    .social-icons {
+        margin-top: 20px;
+        /* Adjusting top margin */
+        text-align: center;
+        /* Centering social icons */
+    }
+
+    .social-icons a {
+        font-size: 25px;
+        /* Adjusting font size */
+        margin-right: 10px;
+        /* Adjusting right margin */
+        margin-left: 10px;
+        /* Adjusting left margin */
+        margin-top: 50px;
+        /* Adjusting top margin */
+    }
+
+    section div div div div form button {
+        padding: 10px 40px;
+        /* Adjusting button padding */
+        font-size: 16px;
+        /* Adjusting font size */
+        margin-top: 15px;
+        /* Adjusting top margin */
+        display: block;
+        /* Making button a block element */
+        margin-left: auto;
+        /* Centering button */
+        margin-right: auto;
+        /* Centering button */
+    }
+
+    .contact-right form {
+        width: 100%;
+        /* Ensuring the form takes full width */
+        display: flex;
+        /* Using flexbox for centering */
+        flex-direction: column;
+        /* Aligning children vertically */
+        align-items: center;
+        /* Centering children horizontally */
+    }
+
+    form input,
+    form textarea {
+        width: 80%;
+        /* Decreasing width to 80% */
+        padding: 10px;
+        /* Adjusting padding */
+        margin: 10px 0;
+        /* Adjusting margin */
+        font-size: 16px;
+        /* Adjusting font size */
+        text-align: center;
+        /* Centering text inside input and textarea */
+    }
+}
+
+/* -----------FOOTER------------ */
 footer {
     background-color: rgb(6, 73, 73);
 }
@@ -278,6 +629,7 @@ footer .footer-right {
     padding: 12px 0px;
 }
 
+/* ---------NAV GREETINGS IMAGE FOOTER RESPONSIVENESS------------ */
 @media screen and (max-width: 1600px) {
     body {
         min-width: fit-content;
